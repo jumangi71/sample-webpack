@@ -1,0 +1,2 @@
+webpackJsonp([1],[function(o,c,n){"use strict";n(2);var e=n(1);e(document).on("click",function(){console.log("adsada")}),console.log(123),console.log(0xa83dfc54ce7ef800)},,function(o,c){}]);
+//# sourceMappingURL=55fdadf116bbc876b3e5.application.js.map

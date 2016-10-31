@@ -7,7 +7,7 @@ module.exports = function(_path) {
     devtool: 'eval',
     module: {
       preLoaders: [
-        { test: /\.js$/, loader: 'eslint-loader', exclude: [/node_modules/, /app\/assets\/javascripts\/vendors/, /app\/assets\/javascripts\/lib\/re-counter.js/] },
+        { test: /\.js$/, loader: 'eslint-loader', exclude: [/node_modules/] },
         { test: /\.styl$/, loader: 'stylint' }
       ]
     },
@@ -18,9 +18,8 @@ module.exports = function(_path) {
       configFile: '.eslintrc'
     },
     devServer: {
-      proxy: {
-        '**': 'http://localhost:3000'
-      }
+      contentBase: './public/assets',
+      hot: true
     }
   };
 };
